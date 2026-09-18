@@ -1,0 +1,198 @@
+<title>学ウィズ サポート</title>
+<style>
+  :root{
+    --bg:#f7f9fc;
+    --surface:#ffffff;
+    --border:#e2e8f0;
+    --text:#12202f;
+    --text-muted:#5b6b7c;
+    --accent:#208aef;
+    --accent-soft:#e8f2ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1420;
+      --surface:#131c2b;
+      --border:#243144;
+      --text:#eef3f8;
+      --text-muted:#93a3b5;
+      --accent:#5aa9f5;
+      --accent-soft:#182741;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1420;
+    --surface:#131c2b;
+    --border:#243144;
+    --text:#eef3f8;
+    --text-muted:#93a3b5;
+    --accent:#5aa9f5;
+    --accent-soft:#182741;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Hiragino Sans","Noto Sans JP",system-ui,-apple-system,sans-serif;
+    line-height:1.75;
+    padding-inline:20px;
+    padding-block:48px 64px;
+  }
+  main{
+    max-width:680px;
+    margin-inline:auto;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+  }
+  header{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:var(--accent);
+    font-weight:600;
+    letter-spacing:.04em;
+  }
+  h1{
+    font-size:clamp(26px,5vw,34px);
+    margin:0;
+    text-wrap:balance;
+    letter-spacing:-0.01em;
+  }
+  .tagline{
+    color:var(--text-muted);
+    font-size:15px;
+    margin:0;
+  }
+  section{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  section h2{
+    font-size:17px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    background:var(--accent-soft);
+    border-radius:12px;
+    padding:16px 18px;
+  }
+  .contact-row .label{
+    font-size:13px;
+    color:var(--text-muted);
+  }
+  .contact-row .value{
+    font-size:16px;
+    font-weight:600;
+    word-break:break-all;
+  }
+  .contact-row a{
+    color:var(--accent);
+    text-decoration:none;
+  }
+  .contact-row a:hover{ text-decoration:underline; }
+  .note{
+    font-size:13.5px;
+    color:var(--text-muted);
+  }
+  .faq-item{
+    border-top:1px solid var(--border);
+    padding-top:16px;
+  }
+  .faq-item:first-child{
+    border-top:none;
+    padding-top:0;
+  }
+  .faq-item .q{
+    font-weight:600;
+    font-size:15px;
+    margin-bottom:6px;
+    display:flex;
+    gap:8px;
+  }
+  .faq-item .q .mark{
+    color:var(--accent);
+    flex:none;
+  }
+  .faq-item .a{
+    font-size:14.5px;
+    color:var(--text-muted);
+    margin:0;
+    padding-left:22px;
+  }
+  footer{
+    font-size:12.5px;
+    color:var(--text-muted);
+    text-align:center;
+    padding-top:8px;
+  }
+  footer a{ color:var(--text-muted); }
+</style>
+
+<main>
+  <header>
+    <span class="badge">学ウィズ　MANAWITH</span>
+    <h1>サポートセンター</h1>
+    <p class="tagline">未来の学びを、あなたと。困ったときはこちらからお問い合わせください。</p>
+  </header>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <div class="contact-row">
+      <div>
+        <div class="label">メールでのお問い合わせ</div>
+        <div class="value"><a href="mailto:the.quietpart000@gmail.com">the.quietpart000@gmail.com</a></div>
+      </div>
+    </div>
+    <p class="note">通常3営業日以内にご返信します。アプリ内の不具合報告の際は、お使いの端末（iPhone/Android）の機種名と、発生した画面・操作の内容を添えていただけるとスムーズです。</p>
+  </section>
+
+  <section>
+    <h2>よくあるご質問</h2>
+
+    <div class="faq-item">
+      <p class="q"><span class="mark">Q.</span>サブスクリプションを解約したい</p>
+      <p class="a">お支払いはApp Store経由のため、iPhoneの「設定」アプリ→ご自身のApple ID→「サブスクリプション」から、いつでも解約手続きができます。次回更新日の24時間前までの操作で、次回以降の請求が止まります。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q"><span class="mark">Q.</span>クレジットとは何ですか</p>
+      <p class="a">AIへの質問機能などで消費するアプリ内のポイントです。無料プランでも毎月付与され、スタンダードプランへの加入や追加購入でさらに増やせます。有効期限は種類ごとに定められています（詳細はアプリ内「設定」→「クレジットについて」）。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q"><span class="mark">Q.</span>アカウントを削除したい</p>
+      <p class="a">アプリ内「設定」→「アカウントを削除する」から申請できます。申請後30日間は猶予期間として再ログインでいつでも取り消せます。30日経過後、学習履歴を含む全データが完全に削除されます。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="q"><span class="mark">Q.</span>不具合を見つけた・要望がある</p>
+      <p class="a">上記のメールアドレスまで、画面のスクリーンショットと合わせてお気軽にご連絡ください。順次確認し、アップデートで対応いたします。</p>
+    </div>
+  </section>
+
+  <footer>
+    運営：佐藤匠（個人開発）<br>
+    学ウィズ（MANAWITH）
+  </footer>
+</main>
