@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学ウィズ プライバシーポリシー</title>
+<style>
+  :root{
+    --bg:#f7f9fc;
+    --surface:#ffffff;
+    --border:#e2e8f0;
+    --text:#12202f;
+    --text-muted:#5b6b7c;
+    --accent:#208aef;
+    --accent-soft:#e8f2ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1420;
+      --surface:#131c2b;
+      --border:#243144;
+      --text:#eef3f8;
+      --text-muted:#93a3b5;
+      --accent:#5aa9f5;
+      --accent-soft:#182741;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Hiragino Sans","Noto Sans JP",system-ui,-apple-system,sans-serif;
+    line-height:1.8;
+    padding-inline:20px;
+    padding-block:48px 64px;
+  }
+  main{
+    max-width:680px;
+    margin-inline:auto;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+  }
+  header{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    color:var(--accent);
+    font-weight:600;
+    letter-spacing:.04em;
+  }
+  h1{
+    font-size:clamp(24px,5vw,30px);
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  .note{
+    font-size:13px;
+    color:var(--text-muted);
+  }
+  section{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  section h2{
+    font-size:16px;
+    margin:0;
+    color:var(--accent);
+  }
+  section p{
+    margin:0;
+    font-size:14.5px;
+    color:var(--text-muted);
+    white-space:pre-line;
+  }
+  footer{
+    font-size:12.5px;
+    color:var(--text-muted);
+    text-align:center;
+    padding-top:8px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="badge">学ウィズ　MANAWITH</span>
+    <h1>プライバシーポリシー</h1>
+    <p class="note">最終更新：2026年9月</p>
+  </header>
+
+  <section>
+    <h2>1. はじめに</h2>
+    <p>本プライバシーポリシーは、佐藤匠（以下「運営者」）が提供する本アプリ（以下「本サービス」）における利用者情報の取り扱いについて定めるものです。</p>
+  </section>
+
+  <section>
+    <h2>2. 収集する情報</h2>
+    <p>本サービスは以下の情報を取得します。
+・表示名（ニックネーム）、学年、受験年、生年（年のみ）
+・学習目標（志望校・目標得点・偏差値等、入力した場合）
+・学習履歴（解答内容・正誤・所要時間、学習セッションの記録、学習計画の進捗）
+・AIへの質問内容（要約及び関連タグのみ恒久的に保存し、生の応答内容は14日で自動削除します。会話全文は保存しません）
+・投稿した問題・コメント・いいね等のコミュニティ活動
+・課金状況（購入した商品・サブスクリプションの状態。カード番号等の決済情報自体は運営者では保持せず、Apple/Google及び決済管理サービスが管理します）
+・広告の表示・視聴に関する情報（後述）</p>
+  </section>
+
+  <section>
+    <h2>3. 利用目的</h2>
+    <p>取得した情報は、本サービスの提供・学習内容の分析や学習計画の作成・不正利用の防止・お問い合わせへの対応・利用状況の分析・広告の配信のために利用します。</p>
+  </section>
+
+  <section>
+    <h2>4. 第三者への提供・業務委託先</h2>
+    <p>本サービスは以下の外部サービスを利用しており、必要な範囲で情報を送信します。
+・Supabase（データベース・認証・サーバー機能の提供）
+・RevenueCat（サブスクリプション・購入状況の管理）
+・Google AdMob（広告の配信。原則として非パーソナライズ広告のみをリクエストします）
+・Anthropic（AIによる質問への回答生成。送信されるのは質問文・添付画像等、質問に必要な範囲の内容のみです）</p>
+  </section>
+
+  <section>
+    <h2>5. データの保存期間</h2>
+    <p>・答案画像：30日で自動削除
+・AIへの質問に対する生の応答内容：14日（以降は要約とタグのみ保持）
+・AIとの会話全文：保存しません
+・学習セッション・解答記録：学習分析の基礎データとして保持します
+・退会（アカウント削除）時：後述の手続きにより、猶予期間経過後に全データを削除します</p>
+  </section>
+
+  <section>
+    <h2>6. アカウントの削除</h2>
+    <p>アプリ内の設定画面からいつでもアカウント削除を申請できます。申請後30日間は猶予期間としてデータを保持し、この間に再度ログインすることで削除を取り消せます。猶予期間の経過後、全ての情報を完全に削除します。</p>
+  </section>
+
+  <section>
+    <h2>7. 未成年者への配慮</h2>
+    <p>生年から13歳未満と判定される利用者に対しては、広告を常に非パーソナライズ広告として配信し、行動ログの詳細な収集や位置情報・連絡先の取得は行いません。表示名には本名を使用しないことを推奨しています。</p>
+  </section>
+
+  <section>
+    <h2>8. お問い合わせ先</h2>
+    <p>本ポリシーに関するお問い合わせは the.quietpart000@gmail.com までご連絡ください。</p>
+  </section>
+
+  <section>
+    <h2>9. 改定について</h2>
+    <p>本ポリシーの内容は、必要に応じて改定することがあります。重要な変更がある場合はアプリ内でお知らせします。</p>
+  </section>
+
+  <footer>
+    運営：佐藤匠（個人開発）<br>
+    学ウィズ（MANAWITH）
+  </footer>
+</main>
+</body>
+</html>
